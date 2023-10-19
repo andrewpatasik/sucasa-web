@@ -1,0 +1,17 @@
+{
+  "name": "sucasa-web",
+  "version": "1.0.0",
+  "description": "sucasa is a place to find inspiration for interior design",
+  "author": "andrewpatasik",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"yarn workspace @sucasa-web/server start\" \"yarn workspace @sucasa-web/ui dev\""
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
